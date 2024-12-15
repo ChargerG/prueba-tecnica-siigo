@@ -14,10 +14,8 @@ import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 public class StepDefinitionCreateClients {
     @Dado("que {actor} ha iniciado sesion")
     public void queCamiloHaIniciadoSesion(Actor actor) {
-        Login.siigo(
-                actor.recall(KeyToRemember.EMAIL.name()),
-                actor.recall(KeyToRemember.PASSWORD.name())
-        ).performAs(actor);
+        Login.siigo(actor.recall(KeyToRemember.EMAIL.name()), actor.recall(KeyToRemember.PASSWORD.name()))
+                .performAs(actor);
     }
 
     @Cuando("accede a la opcion de crear clientes")

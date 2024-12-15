@@ -15,7 +15,7 @@ public class CallService {
      * @param resource   ruta del recurso a consumir
      * @param body       Object con el body del servicio a consumir
      * @param statusCode código de respuesta
-     * @param remember   recuerdo donde se guardará el campo consultado
+     * @param remember   recuerdo donde se guardará la respuesta al consumir la petición
      */
     public static Interaction postAndGetResponse(String resource, Object body, Integer statusCode, KeyToRemember remember) {
         return instrumented(PostAndGetResponse.class, resource, body, statusCode, remember);

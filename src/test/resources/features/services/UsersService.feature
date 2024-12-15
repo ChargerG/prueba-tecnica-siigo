@@ -11,7 +11,6 @@ Característica: Crear, actualizar, y eliminar informacion de un usuario
     Y el campo name contiene el valor <name>, y el campo job contiene el valor <job>
 
     Ejemplos:
-
       | name       | job                 |
       | morpheus   | leader              |
       | tigerman   | automation engineer |

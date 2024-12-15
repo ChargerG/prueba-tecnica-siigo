@@ -1,4 +1,4 @@
-package co.com.siigo.prueba.tasks;
+package co.com.siigo.prueba.tasks.ui;
 
 import co.com.siigo.prueba.utils.KeyToRemember;
 import net.serenitybdd.screenplay.Actor;

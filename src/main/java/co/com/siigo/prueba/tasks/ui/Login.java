@@ -1,6 +1,6 @@
-package co.com.siigo.prueba.tasks;
+package co.com.siigo.prueba.tasks.ui;
 
-import co.com.siigo.prueba.interactions.SiigoUser;
+import co.com.siigo.prueba.interactions.ui.SiigoUser;
 import co.com.siigo.prueba.userInterfaces.LoginPage;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;

@@ -1,4 +1,4 @@
-package co.com.siigo.prueba.interactions.generalInteractions;
+package co.com.siigo.prueba.interactions.ui.generalInteractions;
 
 import net.serenitybdd.annotations.Step;
 import net.serenitybdd.screenplay.Actor;

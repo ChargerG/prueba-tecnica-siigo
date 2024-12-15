@@ -22,7 +22,7 @@ public class StepDefinitionCreateUsers {
     }
 
     @Y("el cuerpo de la respuesta contiene los campos {businessParameter}, {businessParameter}, {businessParameter} y {businessParameter}")
-    public void elCuerpoDeLaRespuestaContieneLosCamposY(String arg0, String arg1, String arg2, String arg3) {
+    public void elCuerpoDeLaRespuestaContieneLosCamposY(String name, String job, String createdAt, String id) {
 
     }
 

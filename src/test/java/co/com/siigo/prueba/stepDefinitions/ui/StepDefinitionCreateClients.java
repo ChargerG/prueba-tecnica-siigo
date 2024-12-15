@@ -1,4 +1,4 @@
-package co.com.siigo.prueba.stepDefinitions;
+package co.com.siigo.prueba.stepDefinitions.ui;
 
 import co.com.siigo.prueba.tasks.CreateNew;
 import co.com.siigo.prueba.tasks.Login;

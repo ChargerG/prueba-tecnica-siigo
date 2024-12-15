@@ -1,4 +1,4 @@
-package co.com.siigo.prueba.runners;
+package co.com.siigo.prueba.runners.ui;
 
 import io.cucumber.junit.CucumberOptions;
 import net.serenitybdd.cucumber.CucumberWithSerenity;

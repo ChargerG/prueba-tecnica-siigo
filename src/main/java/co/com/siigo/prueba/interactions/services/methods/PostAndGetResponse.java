@@ -14,24 +14,18 @@ public class PostAndGetResponse extends RestInteraction {
 
     private final String resource;
     private final Object body;
-    private final Map<String,String> headers;
+    private final Map<String, String> headers;
     private final Class<?> clazz;
+    private final Integer statusCode;
     private final KeyToRemember remember;
 
-    public PostAndGetResponse(String resource, Object body, Class<?> clazz, KeyToRemember remember) {
+    public PostAndGetResponse(String resource, Object body, Integer statusCode, KeyToRemember remember) {
         this.resource = resource;
         this.body = body;
-        this.clazz = clazz;
+        this.clazz = Object.class;
+        this.statusCode = statusCode;
         this.remember = remember;
-        this.headers = null;
-    }
-
-    public PostAndGetResponse(String resource, Object body, Map<String, String> headers, Class<?> clazz, KeyToRemember remember) {
-        this.resource = resource;
-        this.body = body;
-        this.headers = headers;
-        this.clazz = clazz;
-        this.remember = remember;
+        this.headers = Map.of();
     }
 
     @Step("{0} consume la peticion POST")
@@ -43,7 +37,7 @@ public class PostAndGetResponse extends RestInteraction {
                 .body(this.body)
                 .when().post(as(actor).resolve(this.resource))
                 .then()
-                .statusCode(200)
+                .statusCode(this.statusCode)
                 .extract()
                 .body()
                 .as(clazz));

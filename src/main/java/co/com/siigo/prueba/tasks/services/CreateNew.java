@@ -5,8 +5,6 @@ import co.com.siigo.prueba.utils.KeyToRemember;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 
-import java.util.Map;
-
 public class CreateNew implements Task {
     private final String resource;
     private final String jsonResponse;
@@ -25,8 +23,7 @@ public class CreateNew implements Task {
         actor.attemptsTo(CallService.postAndGetResponse(
                 resource,
                 jsonResponse,
-                Map.of("Conten-Type", "application/json"),
-                String.class,
+                201,
                 KeyToRemember.RESPONSE)
         );
     }

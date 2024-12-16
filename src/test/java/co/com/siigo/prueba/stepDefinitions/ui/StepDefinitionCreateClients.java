@@ -1,7 +1,7 @@
 package co.com.siigo.prueba.stepDefinitions.ui;
 
-import co.com.siigo.prueba.tasks.ui.CreateNew;
-import co.com.siigo.prueba.tasks.ui.Login;
+import co.com.siigo.prueba.tasks.ui.siigo.CreateNew;
+import co.com.siigo.prueba.tasks.ui.siigo.Login;
 import co.com.siigo.prueba.utils.KeyToRemember;
 import io.cucumber.java.es.Cuando;
 import io.cucumber.java.es.Dado;

@@ -1,7 +1,9 @@
-package co.com.siigo.prueba.tasks.ui;
+package co.com.siigo.prueba.tasks.ui.siigo;
 
 import co.com.siigo.prueba.interactions.ui.SiigoUser;
+import co.com.siigo.prueba.tasks.ui.NavigateTo;
 import co.com.siigo.prueba.userInterfaces.LoginPage;
+import co.com.siigo.prueba.utils.KeyToRemember;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 
@@ -21,7 +23,7 @@ public class Login implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                NavigateTo.siigo(),
+                NavigateTo.url(actor.recall(KeyToRemember.URL.name())),
                 SiigoUser.clickOnElement(LoginPage.EMAIL),
                 SiigoUser.enterEmail(email),
                 SiigoUser.clickOnElement(LoginPage.PASSWORD),

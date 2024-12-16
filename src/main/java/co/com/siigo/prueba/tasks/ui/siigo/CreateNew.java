@@ -1,4 +1,4 @@
-package co.com.siigo.prueba.tasks.ui;
+package co.com.siigo.prueba.tasks.ui.siigo;
 
 import co.com.siigo.prueba.interactions.ui.SiigoUser;
 import co.com.siigo.prueba.userInterfaces.HomePage;

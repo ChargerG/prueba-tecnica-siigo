@@ -4,10 +4,7 @@ import co.com.siigo.prueba.questions.services.ResponseContains;
 import co.com.siigo.prueba.questions.services.ResponseContainsExpected;
 import co.com.siigo.prueba.questions.services.StatusCodeIs;
 import co.com.siigo.prueba.tasks.services.CreateNew;
-import io.cucumber.java.es.Cuando;
-import io.cucumber.java.es.Dado;
-import io.cucumber.java.es.Entonces;
-import io.cucumber.java.es.Y;
+import io.cucumber.java.es.*;
 import net.serenitybdd.screenplay.rest.abilities.CallAnApi;
 
 import java.util.List;
@@ -56,5 +53,29 @@ public class StepDefinitionCreateUsers {
                 seeThat("el campo job de la respuesta contiene el valor " + jobValue,
                         ResponseContainsExpected.values("job"), equalTo(jobValue))
         );
+    }
+
+    @Dado("que estoy en Reqres")
+    public void queEstoyEnReqres() {
+
+    }
+
+    @Cuando("consumo la peticion PUT para actualizar un usuario")
+    public void consumoLaPeticionPUTParaActualizarUnUsuario() {
+
+    }
+
+    @Entonces("se visualiza status code {businessParameter}")
+    public void seVisualizaStatusCode(String statusCode) {
+
+    }
+
+    @Pero("si consumo la API directamente con los datos que se visualizan en el request")
+    public void siConsumoLaAPIDirectamenteConLosDatosQueSeVisualizanEnElRequest() {
+
+    }
+
+    @Entonces("la respuesta es la misma y los campos name y job no difieren de sus valores")
+    public void laRespuestaEsLaMismaYLosCamposNameYJobNoDifierenDeSusValores() {
     }
 }

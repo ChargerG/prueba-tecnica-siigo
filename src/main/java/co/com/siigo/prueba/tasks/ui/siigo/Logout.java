@@ -1,4 +1,4 @@
-package co.com.siigo.prueba.tasks.ui;
+package co.com.siigo.prueba.tasks.ui.siigo;
 
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;

@@ -1,4 +1,4 @@
-package co.com.siigo.prueba.questions.services;
+package co.com.siigo.prueba.questions.services.reqres;
 
 import co.com.siigo.prueba.utils.KeyToRemember;
 import net.serenitybdd.screenplay.Actor;

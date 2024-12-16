@@ -1,8 +1,8 @@
 package co.com.siigo.prueba.stepDefinitions.services;
 
-import co.com.siigo.prueba.questions.services.ResponseContains;
-import co.com.siigo.prueba.questions.services.ResponseContainsExpected;
-import co.com.siigo.prueba.questions.services.StatusCodeIs;
+import co.com.siigo.prueba.questions.services.reqres.ResponseContains;
+import co.com.siigo.prueba.questions.services.reqres.ResponseContainsExpected;
+import co.com.siigo.prueba.questions.services.reqres.StatusCodeIs;
 import co.com.siigo.prueba.tasks.services.CreateNew;
 import io.cucumber.java.es.*;
 import net.serenitybdd.screenplay.rest.abilities.CallAnApi;

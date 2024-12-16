@@ -1,12 +1,12 @@
-package co.com.siigo.prueba.interactions.ui;
+package co.com.siigo.prueba.interactions.ui.siigo;
 
 import co.com.siigo.prueba.interactions.ui.generalInteractions.ClickOnElement;
 import co.com.siigo.prueba.interactions.ui.generalInteractions.MoveOnElement;
-import co.com.siigo.prueba.interactions.ui.home.ClickOnClients;
-import co.com.siigo.prueba.interactions.ui.home.ClickOnCreateButton;
-import co.com.siigo.prueba.interactions.ui.login.ClickOnLoginButton;
-import co.com.siigo.prueba.interactions.ui.login.EnterEmail;
-import co.com.siigo.prueba.interactions.ui.login.EnterPassword;
+import co.com.siigo.prueba.interactions.ui.siigo.home.ClickOnClients;
+import co.com.siigo.prueba.interactions.ui.siigo.home.ClickOnCreateButton;
+import co.com.siigo.prueba.interactions.ui.siigo.login.ClickOnLoginButton;
+import co.com.siigo.prueba.interactions.ui.siigo.login.EnterEmail;
+import co.com.siigo.prueba.interactions.ui.siigo.login.EnterPassword;
 import net.serenitybdd.screenplay.Interaction;
 import net.serenitybdd.screenplay.targets.Target;
 

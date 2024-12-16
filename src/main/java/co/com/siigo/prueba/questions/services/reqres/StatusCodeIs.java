@@ -1,4 +1,4 @@
-package co.com.siigo.prueba.questions.services;
+package co.com.siigo.prueba.questions.services.reqres;
 
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;

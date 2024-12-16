@@ -1,4 +1,4 @@
-package co.com.siigo.prueba.interactions.ui.home;
+package co.com.siigo.prueba.interactions.ui.siigo.home;
 
 import co.com.siigo.prueba.userInterfaces.HomePage;
 import net.serenitybdd.annotations.Step;

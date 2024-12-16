@@ -22,15 +22,27 @@ public class UserInterfaceHook {
     private final String password = EnvironmentSpecificConfiguration.from(environmentVariables)
             .getProperty("siigo.password");
 
+    private final String reqresUrl = EnvironmentSpecificConfiguration.from(environmentVariables)
+            .getProperty("reqres.url");
+
+    //region Siigo
     @Before("@FeatureName:CreateClients")
-    public void setupEnvironmentVariables() {
+    public void setupSiigoEnvironmentVariables() {
         theActorInTheSpotlight().remember(KeyToRemember.URL.name(), siigoUrl);
         theActorInTheSpotlight().remember(KeyToRemember.EMAIL.name(), email);
         theActorInTheSpotlight().remember(KeyToRemember.PASSWORD.name(), password);
     }
 
     @After("@Logout")
-    public void deleteConversationsAndMessagesToUnknownContact() {
+    public void logout() {
 
     }
+    //endregion Siigo
+
+    //region Reqres
+    @Before("@FeatureName:UsersService")
+    public void setupReqresEnvironmentVariables() {
+        theActorInTheSpotlight().remember(KeyToRemember.URL.name(), reqresUrl);
+    }
+    //endregion Reqres
 }

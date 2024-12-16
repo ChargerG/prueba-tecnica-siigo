@@ -1,7 +1,7 @@
 package co.com.siigo.prueba.tasks.ui.siigo;
 
 import co.com.siigo.prueba.interactions.ui.siigo.SiigoUser;
-import co.com.siigo.prueba.userInterfaces.HomePage;
+import co.com.siigo.prueba.userInterfaces.siigo.HomePage;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.ensure.Ensure;

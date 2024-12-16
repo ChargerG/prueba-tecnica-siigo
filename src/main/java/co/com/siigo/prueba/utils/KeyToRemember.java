@@ -4,5 +4,7 @@ public enum KeyToRemember {
     URL,
     EMAIL,
     PASSWORD,
-    RESPONSE
+    RESPONSE,
+    STATUS_CODE,
+    BODY
 }

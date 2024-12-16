@@ -1,4 +1,4 @@
-package co.com.siigo.prueba.userInterfaces;
+package co.com.siigo.prueba.userInterfaces.siigo;
 
 import net.serenitybdd.screenplay.targets.Target;
 import net.thucydides.core.webdriver.shadow.ByShadow;

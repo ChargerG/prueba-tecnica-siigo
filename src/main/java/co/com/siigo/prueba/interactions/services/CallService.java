@@ -1,6 +1,7 @@
 package co.com.siigo.prueba.interactions.services;
 
 import co.com.siigo.prueba.interactions.services.methods.PostAndGetResponse;
+import co.com.siigo.prueba.interactions.services.methods.PutAndGetResponse;
 import co.com.siigo.prueba.utils.KeyToRemember;
 import net.serenitybdd.screenplay.Interaction;
 
@@ -19,5 +20,16 @@ public class CallService {
      */
     public static Interaction postAndGetResponse(String resource, Object body, Integer statusCode, KeyToRemember remember) {
         return instrumented(PostAndGetResponse.class, resource, body, statusCode, remember);
+    }
+
+    /**
+     * @param resource ruta del recurso a consumir
+     * @param body Object con body del servicio a consumir
+     * @param statusCode código de respuesta
+     * @param remember
+     * @return recuerdo donde se guardará la respuesta al consumir la petición
+     */
+    public static Interaction putAndGetResponse(String resource, Object body, Integer statusCode, KeyToRemember remember) {
+        return instrumented(PutAndGetResponse.class, resource, body, statusCode, remember);
     }
 }

@@ -2,7 +2,7 @@ package co.com.siigo.prueba.tasks.ui.siigo;
 
 import co.com.siigo.prueba.interactions.ui.siigo.SiigoUser;
 import co.com.siigo.prueba.tasks.ui.NavigateTo;
-import co.com.siigo.prueba.userInterfaces.LoginPage;
+import co.com.siigo.prueba.userInterfaces.siigo.LoginPage;
 import co.com.siigo.prueba.utils.KeyToRemember;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;

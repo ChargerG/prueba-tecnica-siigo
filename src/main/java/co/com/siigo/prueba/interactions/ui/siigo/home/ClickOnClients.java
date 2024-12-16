@@ -1,6 +1,6 @@
 package co.com.siigo.prueba.interactions.ui.siigo.home;
 
-import co.com.siigo.prueba.userInterfaces.HomePage;
+import co.com.siigo.prueba.userInterfaces.siigo.HomePage;
 import net.serenitybdd.annotations.Step;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Interaction;

@@ -22,5 +22,5 @@ Característica: Crear, actualizar un usuario y validar respuesta.
     Cuando consumo la peticion PUT para actualizar un usuario
     Entonces se visualiza status code 200
     Pero si consumo la API directamente con los datos que se visualizan en el request
-    Entonces la respuesta es la misma y los campos name y job no difieren de sus valores
+    Entonces la respuesta es la misma
 

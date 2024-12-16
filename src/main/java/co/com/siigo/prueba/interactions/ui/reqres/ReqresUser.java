@@ -2,6 +2,7 @@ package co.com.siigo.prueba.interactions.ui.reqres;
 
 import co.com.siigo.prueba.interactions.ui.generalInteractions.ClickOnElement;
 import co.com.siigo.prueba.interactions.ui.generalInteractions.MoveOnElement;
+import co.com.siigo.prueba.interactions.ui.reqres.home.ClickOnPutMethod;
 import net.serenitybdd.screenplay.Interaction;
 import net.serenitybdd.screenplay.targets.Target;
 
@@ -20,6 +21,12 @@ public class ReqresUser {
 
     public static Interaction moveOnElement(Target target) {
         return instrumented(MoveOnElement.class, target);
+    }
+    //endregion
+
+    //region Interacciones Reqres
+    public static Interaction clickOnPutMethod() {
+        return instrumented(ClickOnPutMethod.class);
     }
     //endregion
 
